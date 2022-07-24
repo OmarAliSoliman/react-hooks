@@ -1,0 +1,20 @@
+.card_wrapper {
+  border: 1px solid #000;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: red;
+}
+
+.showBtn {
+  border: 0;
+  padding: 10px;
+  display: block;
+  margin: auto;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.hidebox {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
