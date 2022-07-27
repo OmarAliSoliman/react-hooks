@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import CardComponents from "./CardComponents";
-import FilterComponent from "./css/FilterComponent";
+import FilterComponent from "./FilterComponent";
 import './css/style.css'
 
 
@@ -13,25 +13,36 @@ function App() {
   const [filterName, setfilterName] = useState("");
   const [boyes, setBoyes] = useState([
     {
-      id: 0,
+      id: 1,
       name: 'ahmed',
       age: '28',
       adress: 'assuit',
-      phone: '01098586783'
-    },
-    {
-      id: 1,
-      name: 'omar',
-      age: '24',
-      adress: 'cairo',
-      phone: '01018386283'
+      phone: '01098586783',
+      type: 'men',
     },
     {
       id: 2,
+      name: 'mena',
+      age: '24',
+      adress: 'cairo',
+      phone: '01018386283',
+      type: 'girl',
+    },
+    {
+      id: 3,
       name: 'ail',
       age: '51',
       adress: 'sohag',
-      phone: '0109358686'
+      phone: '0109358686',
+      type: 'men',
+    },
+    {
+      id: 4,
+      name: 'omnya',
+      age: '51',
+      adress: 'sohag',
+      phone: '0109358686',
+      type: 'girl',
     }
   ]);
 
@@ -127,7 +138,7 @@ function App() {
 
       <FilterComponent handelChange={handelChange} />
       <div className={showName ? null : "hidebox"}>
-        <CardComponents names={showItems()} type="men" bgcolor="red" deleteItem={deleteItem} />
+        <CardComponents names={showItems()} deleteItem={deleteItem} />
       </div>
 
       {/* solution 2 */}

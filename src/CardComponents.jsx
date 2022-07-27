@@ -8,7 +8,7 @@ const CardComponents = ({names, type, bgcolor, deleteItem}) => {
   // const { names, hil } = props;
   // const hi = hi;
   const cards = names.map((el, index) => (
-    <div className={styles.card_wrapper} key={index} >
+    <div className={styles.card_wrapper} key={index} style={{backgroundColor: el.type == "men" ? "green" : "pink"}} >
       <h4>Name: {el.name} </h4>
       <h4>Age: {el.age} </h4>
       <h4>Adress: {el.adress} </h4>
