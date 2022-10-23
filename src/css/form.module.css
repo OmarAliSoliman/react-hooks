@@ -1,0 +1,9 @@
+.form_control{
+  width: 90%;
+  margin: auto;
+  padding: 20px 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin: 20px auto;
+  display: block;
+}

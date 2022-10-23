@@ -1,7 +1,9 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import CardComponents from "./CardComponents";
 import FilterComponent from "./FilterComponent";
 import './css/style.css'
+import Form from "./Form";
+import UseEffectCom from "./UseEffectCom";
 
 
 
@@ -120,6 +122,11 @@ function App() {
   }
 
 
+  useEffect(()=>{
+    console.log("first render")
+  }, [])
+
+
 
   // {name, age, adress, phone} => distructing 
 
@@ -136,10 +143,17 @@ function App() {
 
       {/* solution 1 */}
 
-      <FilterComponent handelChange={handelChange} />
+      {/* <FilterComponent handelChange={handelChange} />
       <div className={showName ? null : "hidebox"}>
         <CardComponents names={showItems()} deleteItem={deleteItem} />
-      </div>
+      </div> */}
+
+      {/* <Form /> */}
+
+      <UseEffectCom />
+
+
+
 
       {/* solution 2 */}
       {/* {showName ? (
