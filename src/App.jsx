@@ -1,9 +1,10 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import CardComponents from "./CardComponents";
 import FilterComponent from "./FilterComponent";
 import './css/style.css'
 import Form from "./Form";
 import UseEffectCom from "./UseEffectCom";
+import { useEffect } from "react";
 
 
 
@@ -122,6 +123,7 @@ function App() {
   }
 
 
+  // run after render 
   useEffect(()=>{
     console.log("first render")
   }, [])
@@ -149,6 +151,7 @@ function App() {
       </div> */}
 
       {/* <Form /> */}
+      
 
       <UseEffectCom />
 

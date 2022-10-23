@@ -3,6 +3,11 @@ import React, { useEffect } from 'react'
 
 function UseEffectCom() {
 
+  const [elemtn, setElement] = useState("");
+
+
+  // 
+
   useEffect(()=>{
     console.log("first run")
   }, [])
